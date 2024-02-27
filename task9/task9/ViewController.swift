@@ -77,7 +77,7 @@ extension ViewController: UIScrollViewDelegate {
         let oldX = targetContentOffset.pointee.x
         let offset = round((oldX - leftInset) / (cellWidth + leftInset))
         let newX = offset * (cellWidth + leftInset)
-        targetContentOffset.pointee.x = offset == 0 ? newX : newX+leftInset
+        targetContentOffset.pointee.x = newX
     }
 }
 
